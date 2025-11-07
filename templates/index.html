@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Advanced Stock Market Analysis Dashboard (Demo)</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Stock Market Analysis Dashboard (Demo)</h1>
+
+    <!-- Analyze one symbol (from demo CSV) -->
+    <div class="search">
+      <input id="symbol" placeholder="e.g., ACC.NS or ADANIENT.NS" />
+      <button id="go">Analyze</button>
+    </div>
+
+    <!-- Summary output -->
+    <div id="summary" class="card"></div>
+    <div id="errors" class="alert"></div>
+
+    <!-- All stocks grid -->
+    <div class="section">
+      <div class="section-header">
+        <h2>All Stocks (Demo CSV)</h2>
+        <a class="link" href="/api/csv">Download demo CSV</a>
+      </div>
+
+<div id="stocksGrid" class="grid"></div>
+
+      <div class="center">
+        <button id="showMore" class="secondary">Show more</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
